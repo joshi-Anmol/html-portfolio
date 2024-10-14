@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anmol joshi's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1941bb79b6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Screenshot 2024-09-15 090308.png" class="logo">
+
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>PYTHON developer</p>
+                <h1>hii , I am <span>Anmol Joshi </span><br> from INDIA and I am a skilled <b class="blacked">PYTHON
+                        developer</b> and <b class="blacked">WEB developer</b></h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- 
+    /* about me section */  -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-call1"><img src="images/sati.jpg" class="about-call1"></div>
+                <div class="about-call2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>HII , My name is <B> Anmol Joshi</B>. I am a BCA graduate from the <b>KUMAON UNIVERSITY </b>
+                        from the gateway of KUMAON <b> HALDWANI </b> . I am here to show you my achivements and skills
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">experince</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>PYTHON DEVELOPMENT </span><br> creates python based projects </li>
+                            <li><span>WEB DEVELOPMENT </span><br> designing web/apps interfaces </li>
+                            <li><span>CONTENT WRITING </span><br> writes with the brilliant mind </li>
+                            <li><span>GLOBAL SERVICE DESK</span><br>able to fluently communticate and express thoughts
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>GLOBAL SERVICE DESK </span><br> with NIT foundation </li>
+                            <li><span>XPMC </span><br> An AI robotics course by the <b> fedration university </b>,
+                                Australia </li>
+                            <!-- <li><span>CONTENT WRITING  </span><br></li>
+                            <li><span>GLOBAL SERVICE DESK</span><br>able to fluently communticate and express thoughts </li> -->
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+
+                            <li><span>Bachelors In Computer Applications</span><br>KUMAON UNIVERSITY [Pal College Of
+                                Technology And Management ]</li>
+                            <li><span>Intermediate </span><br> SCHOLARS' ACADEMIC HOME (2020-2022)</li>
+                            <li><span>High School </span><br> SCHOLARS' ACADEMIC HOME (2018 -2020)</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ Services---------------->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web design</h2>
+                    <p>I have completed my WEB DEVELOPMENT course with the official <b>udemy </b>platform by DR. Angela
+                        Yu</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div><i class="fa-brands fa-python"></i>
+                    <h2>pyhton developer </h2>
+                    <p>I have completed my python course from 100 days of code bootcamp at udemy by Dr. Angela Yu.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div><i class="fa-solid fa-robot"></i>
+                    <h2>ai robotics </h2>
+                    <p>I have cpmplted mu ai robotics certificate from the xpmc program by the fedration university ,
+                        Australia.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------portfolio my work----------------------F -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work1.1.jpeg">
+                    <div class="layer">
+                        <h3>web designing </h3>
+                        <p>creates user interactive web pages </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work2.2.jpeg">
+                    <div class="layer">
+                        <h3>work 2 </h3>
+                        <p>creates work 2 </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work3.jpeg">
+                    <div class="layer">
+                        <h3>work 2 </h3>
+                        <p>creates work 2 </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn ">see more</a>
+        </div>
+    </div>
+    <!-- --------------- contact --------------- -->
+    <div></div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tab_name) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tab_name).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
